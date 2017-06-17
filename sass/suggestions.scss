@@ -1,0 +1,26 @@
+.suggestions-container {
+      margin   : 0;
+      padding  : 0;
+      position : relative;
+      .suggestions {
+          position   : absolute;
+          top        : 0;
+          left       : 0;
+          width      : 100%;
+          overflow-y : auto;
+          z-index    : 9999;
+          li {
+              background      : white;
+              list-style      : none;
+              border-bottom   : 1px solid #D8D8D8;
+              box-shadow      : 0 0 10px rgba(0, 0, 0, 0.14);
+              margin          : 0;
+              padding         : 10px;
+              transition      : background 0.2s;
+              justify-content : space-between;
+              text-transform  : capitalize;
+              cursor          : pointer;
+          }
+      }
+  }
+

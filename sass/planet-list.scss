@@ -1,0 +1,18 @@
+
+.planet-list-container {
+
+    position: absolute;
+    right:20px;
+    top: 90px;
+
+    .planet-list {
+        display: block;
+        height: 100%;
+        left: 0;
+        overflow: hidden;
+        position: relative;
+        top: 0;
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,22 @@
+.planet-container {
+	box-sizing    : content-box;
+	overflow      : hidden;
+	border        : none;
+	border-radius : 4px;
+	font-family   : "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size     : 14px;
+    line-height   : 1.42857143;
+	color         : $color_diesel_approx;
+	text-align    : center;
+	text-overflow : ellipsis;
+	box-shadow    : 1px 1px 1px 0 $black_30;
+	text-shadow   : 1px 1px 1px $black_20;
+    margin-bottom : 10px;
+
+    hr {
+        margin-top    : 10px;
+        margin-bottom : 10px;
+    }
+}
+
+

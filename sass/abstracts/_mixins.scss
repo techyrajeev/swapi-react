@@ -1,0 +1,30 @@
+@mixin notfiy-gen($color_heading, $color_border, $color_background ) {
+    .heading {
+        color: $color_heading;
+        text-overflow: ellipsis;
+        text-transform:capitalize;
+        text-shadow: 1px 1px 3px $color_spicy_pink_31_approx;
+        text-align:left;
+        margin : 0 auto;
+    }
+
+    .content {
+        text-align:left;
+        margin-left:10px;
+        text-shadow: none;
+    }
+
+    .close {
+        float:right;
+        color:black;
+    }
+
+    padding: 10px;
+    border: 2px solid $color_border;
+    border-radius: 5px;
+    background: $color_background;
+    cursor:pointer;
+    transition: 0.5s;
+}
+
+

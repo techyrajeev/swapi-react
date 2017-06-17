@@ -1,0 +1,22 @@
+//colors
+$color_celeste_approx: #ccc;
+$white: #fff;
+$color_pacific_blue_approx: #0097cf;
+
+.search-input {
+	width: 396px;
+	height: 30px;
+	padding: 8px 12px;
+	font-size: 24px;
+	line-height: 30px;
+	border: 2px solid $color_celeste_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 8px;
+	outline: none;
+	background-color: $white;
+	&:focus {
+		border: 2px solid $color_pacific_blue_approx;
+	}
+}
+
+
