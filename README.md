@@ -32,7 +32,7 @@ npm run test
 ```
 ### 3. Run the project
 ```
- npm run dash
+ npm run start
 ```
 
 ### 4. See running project in local browser 
