@@ -3,7 +3,7 @@
 ## Description
 A test project using react,react-router, redux, webpack, express and star wars api.
 
-[Swapi](http://swapi.co/)
+More details about star wars api can be found here - [Swapi](http://swapi.co/)
 
 ### Requirement:
 node : 6.x.x or above 
@@ -14,7 +14,7 @@ npm : 3.x.x or above
 First Go to Project directory
 
 ```
-cd ~/Swapi-test/project
+cd ~/swapi-react
 ```
 then
 
