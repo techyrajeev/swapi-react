@@ -1,4 +1,9 @@
-# Test Project
+# Swapi-react
+
+## Description
+A test project using react,react-router, redux, webpack, express and star wars api.
+
+[Swapi](http://swapi.co/)
 
 ### Requirement:
 node : 6.x.x or above 
