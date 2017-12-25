@@ -2,7 +2,7 @@ const express   = require('express');
 const jwt       = require('jsonwebtoken');
 const swapi     = require('./sw-api');
 const jwtSecret = "This is secret";
-let router      = express.Router();
+const router    = express.Router();
 
 router.post('/', (req, res) => {
   const { username, password } = req.body;
