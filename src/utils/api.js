@@ -44,8 +44,11 @@ module.exports =  {
 
     search(searchTerm) {
         const URL          = '/api/search';
-        const data         = { searchTerm };
+        const data         = {searchTerm };
         const sessionToken = localStorage.getItem('sessionToken');
+        const userName     = localStorage.getItem('userName');
+        data["userName"]   = userName;
+
         return sendPostRequest(URL, data, null, sessionToken);
     }
 };

@@ -7,6 +7,20 @@ const port        = (process.env.PORT || 8080);
 const app         = express();
 const publicPathS = express.static(path.join(__dirname, 'public'), { redirect : false });
 
+const client      = require('redis').createClient();
+const limiter     = require('express-limiter')(search, client);
+
+limiter({
+    path: '/api/search',
+    method: 'post',
+    lookup: 'userName',
+    whitelist:function(req) {
+        return userName == "Luke Skywalker"
+    },
+    total: 5,
+    expire: 1000 * 4
+});
+
 app.use(bodyParser.json());
 
 if (process.env.NODE_ENV !== 'production') {

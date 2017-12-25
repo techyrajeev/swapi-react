@@ -13,6 +13,7 @@ export function logOut() {
     return dispatch => {
         return Promise.resolve().then(() => {
             localStorage.removeItem('sessionToken');
+            localStorage.removeItem('userName');
             dispatch(setCurrentUser({}));
         });
     }
@@ -24,6 +25,7 @@ export function login(data) {
             .then( res => {
                 const token = res.token;
                 localStorage.setItem('sessionToken', token);
+                localStorage.setItem('userName', data.username);
                 dispatch(setCurrentUser(jwtDecode(token)));
             });
     }
