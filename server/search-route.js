@@ -10,11 +10,10 @@ router.post('/', (req, res) => {
 
     try {
        decoded = jwt.verify(authToken, jwtSecret);
+       console.log("Auth decoded:"+JSON.stringify(decoded));
     } catch(err) {
         console.log(err);
     }
-
-    console.log("Auth decoded:"+decoded);
 
     const { searchTerm } = req.body;
 

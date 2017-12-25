@@ -10,7 +10,7 @@ function sendPostRequest(URL, dataToSend, customHeaders = null, sessionToken = n
     }
 
     if (sessionToken) {
-        headers['Authorization'] = 'Bearer ' + sessionToken
+        headers['Authorization'] = sessionToken
     }
 
     return fetch(URL, {
@@ -46,9 +46,6 @@ module.exports =  {
         const URL          = '/api/search';
         const data         = {searchTerm };
         const sessionToken = localStorage.getItem('sessionToken');
-        const userName     = localStorage.getItem('userName');
-        data["userName"]   = userName;
-
         return sendPostRequest(URL, data, null, sessionToken);
     }
 };
